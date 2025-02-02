@@ -1,5 +1,5 @@
 {
-    "name": "@ts-rex/bitfield",
+    "name": "@bronti/bitfield",
     "version": "0.0.1",
     "exports": "./mod.ts"
 }

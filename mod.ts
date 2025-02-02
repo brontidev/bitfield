@@ -1,5 +1,3 @@
-
-
 /**
  * A bitfield is a simple way of storing multiple booleans into 1 number using binary.
  * Each bit represents a different boolean flag.
