@@ -1,5 +1,15 @@
 {
-    "name": "@bronti/bitfield",
-    "version": "0.0.2",
-    "exports": "./mod.ts"
+	"name": "@bronti/bitfield",
+	"version": "0.0.2",
+	"exports": "./mod.ts",
+	"tasks": {
+		"check": "deno fmt --check && deno lint && deno publish --dry-run --allow-dirty",
+		"fix": "deno fmt && deno lint --fix && deno publish --dry-run --allow-dirty"
+	},
+	"fmt": {
+		"semiColons": false,
+		"useTabs": true,
+		"indentWidth": 4,
+		"exclude": ["./docs"]
+	}
 }

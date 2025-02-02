@@ -8,10 +8,10 @@ import { Bitfield } from "@bronti/bitfield"
 import { assert } from "jsr:@std/assert"
 
 enum UserCapabilities {
-    CREATE,
-    READ,
-    UPDATE,
-    DELETE
+	CREATE,
+	READ,
+	UPDATE,
+	DELETE,
 }
 
 class UserCapabilitesBitfield extends Bitfield<UserCapabilities> {}
@@ -23,8 +23,8 @@ assert(capabilities.get(UserCapabilities.CREATE) === true)
 
 const bitfield = UserCapabilitesBitfield.fromValue(0)
 db.save({
-    id: "userID",
-    username: "mavdotj",
-    capabilities: capabilities.value
+	id: "userID",
+	username: "mavdotj",
+	capabilities: capabilities.value,
 })
 ```
